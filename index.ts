@@ -1,7 +1,9 @@
 // Import stylesheets
 import './style.css';
-import './demo'
+import './src/cube';
+import './ternary/sketcher/circle'
+import './ternary/sketcher/sketch'
 
 // Write TypeScript code!
 const appDiv: HTMLElement = document.getElementById('app');
-appDiv.innerHTML = `<h1>TypeScript Starter</h1>`;
+appDiv.innerHTML = `<h1>Threejs cube demo</h1>`;
