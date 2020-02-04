@@ -1,10 +1,10 @@
 
 
-export default class TnObject {
+export class TnObject {
   
 };
 
-export class TnMeta {
+export default class TnMeta {
   
 };
 
