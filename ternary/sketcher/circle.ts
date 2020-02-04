@@ -1,4 +1,4 @@
-import TnObject from './obj'
+import TnObject from './base'
 import * as THREE from 'three';
 
 class Circle extends TnObject {
