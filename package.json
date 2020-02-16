@@ -62,6 +62,7 @@
     "@types/jsdom": "^16.1.0",
     "core-js": "^3.6.4",
     "resize-observer": "^1.0.0",
-    "three": "^0.113.2"
+    "three": "^0.113.2",
+    "set-value": ">=2.0.1"
   }
 }
