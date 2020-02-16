@@ -6,6 +6,7 @@ var geometry: THREE.Geometry;
 var material: THREE.Material;
 var mesh: THREE.Mesh;
 var workspace: HTMLElement;
+var gridHelper: THREE.GridHelper;
 
 function init() {
 
@@ -29,6 +30,10 @@ function init() {
     const resizeObserver = new ResizeObserver(resize);
     resizeObserver.observe(workspace);
 
+    gridHelper = new THREE.GridHelper(10, 20);
+    gridHelper.setRotationFromAxisAngle(new THREE.Vector3(0, 0, 1), 1)
+    scene.add(gridHelper);
+
     resize();
 }
 
@@ -44,7 +49,8 @@ function animate() {
 
     mesh.rotation.x += 0.01;
     mesh.rotation.y += 0.02;
-
+    gridHelper.rotation.x += 0.017;
+    gridHelper.rotation.y += 0.029;
     renderer.render(scene, camera);
 }
 
